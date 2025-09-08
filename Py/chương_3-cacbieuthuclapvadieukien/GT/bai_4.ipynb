@@ -1,0 +1,91 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "e04fa95f",
+   "metadata": {},
+   "source": [
+    "Câu 4: Hãy cho biết kết quả của Boolean Expression \n",
+    " \n",
+    "Yêu cầu: \n",
+    "Cho x, y, z = 3, 5, 7. Hãy cho biết kết quả của Boolean Expression\n",
+    "\n",
+    "(a) x == 3  \n",
+    "(b) x < y  \n",
+    "(c) x >= y  \n",
+    "(d) x <= y  \n",
+    "(e) x != y - 2  \n",
+    "(f) x < 10  \n",
+    "(g) x >= 0 and x < 10  \n",
+    "(h) x < 0 and x < 10  \n",
+    "(i) x >= 0 and x < 2  \n",
+    "(j) x < 0 or x < 10  \n",
+    "(k) x > 0 or x < 10  \n",
+    "(l) x < 0 or x > 10  \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "d1b6a0e2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(a) True\n",
+      "(b) True\n",
+      "(c) False\n",
+      "(d) True\n",
+      "(e) False\n",
+      "(f) True\n",
+      "(g) True\n",
+      "(h) False\n",
+      "(i) False\n",
+      "(j) True\n",
+      "(k) True\n",
+      "(l) False\n"
+     ]
+    }
+   ],
+   "source": [
+    "x, y, z = 3, 5, 7\n",
+    "\n",
+    "print(\"(a)\", x == 3)                  # True\n",
+    "print(\"(b)\", x < y)                   # True\n",
+    "print(\"(c)\", x >= y)                  # False\n",
+    "print(\"(d)\", x <= y)                  # True\n",
+    "print(\"(e)\", x != y - 2)              # False (3 != 5-2 → 3 != 3 → False)\n",
+    "print(\"(f)\", x < 10)                  # True\n",
+    "print(\"(g)\", x >= 0 and x < 10)       # True\n",
+    "print(\"(h)\", x < 0 and x < 10)        # False\n",
+    "print(\"(i)\", x >= 0 and x < 2)        # False\n",
+    "print(\"(j)\", x < 0 or x < 10)         # True\n",
+    "print(\"(k)\", x > 0 or x < 10)         # True\n",
+    "print(\"(l)\", x < 0 or x > 10)         # False"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
