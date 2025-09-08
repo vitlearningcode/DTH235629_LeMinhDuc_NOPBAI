@@ -1,0 +1,61 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "98c81893",
+   "metadata": {},
+   "source": [
+    "Câu 1: Kiểm tra năm nhuần \n",
+    "Yêu cầu: \n",
+    "Nhập vào một năm bất kỳ, kiểm tra năm đó có phải năm nhuần hay không. Biết \n",
+    "rằng: Năm nhuần là năm chia hết cho 4 nhưng không chia hết cho 100 hoặc chia \n",
+    "hết cho 400"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "e9d77cd3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Chương trình kiểm tra năm nhuần\n",
+      "Năm  29  không nhuần\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Chương trình kiểm tra năm nhuần\") \n",
+    "year=int(input(\"Mời Thím nhập vào 1 năm:\")) \n",
+    "if (year % 4 ==0 and year % 100 != 0) or year % 400 == 0: \n",
+    "        print(\"Năm \", year, \" là năm nhuần\")\n",
+    "else: \n",
+    "    print(\"Năm \", year, \" không nhuần\")"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
