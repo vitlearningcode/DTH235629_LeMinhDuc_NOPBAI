@@ -1,0 +1,73 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "0eb42adf",
+   "metadata": {},
+   "source": [
+    "Đếm số ngày trong tháng\n",
+    "\n",
+    "Yêu cầu: \n",
+    "Nhập vào 1 tháng, xuất tháng đó có bao nhiêu ngày.  \n",
+    "1, 3, 5, 7, 8, 10, 12 ➔ 31 ngày \n",
+    "4, 6, 9, 11 ➔ có 30 ngày \n",
+    "\n",
+    "Nếu là tháng 2 thì yêu cầu nhập thêm năm. Năm nhuần thì tháng 2 có 29 ngày, \n",
+    "không nhuần có 28 ngày"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "bcfbe3a3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Chương trình đếm số ngày trong tháng\n",
+      "Tháng  12  có 31 ngày\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Chương trình đếm số ngày trong tháng\") \n",
+    "month=int(input(\"Nhập vào 1 tháng:\")) \n",
+    "if month in (1,3,5,7,8,10,12): \n",
+    "    print(\"Tháng \", month, \" có 31 ngày\") \n",
+    "elif month in (4,6,9,11): \n",
+    "    print(\"Tháng \", month, \" có 30 ngày\") \n",
+    "elif month==2: \n",
+    "    year=int(input(\"Mời bạn nhập vào năm:\")) \n",
+    "    if (year % 4 ==0 and year % 100 != 0) or year % 400 ==0: \n",
+    "        print(\"Tháng \",month, \" có 29 ngày\") \n",
+    "    else: \n",
+    "        print(\"Tháng \", month, \" có 28 ngày\") \n",
+    "else: \n",
+    "    print(\"Tháng \", month, \" không hợp lệ\")"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
